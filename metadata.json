@@ -1,0 +1,5 @@
+{
+  "name": "Copy of HR Lucky Draw & Grouping Tool",
+  "description": "An HR tool for managing name lists, running lucky draws with animations, and automatically generating random groups with CSV export capabilities.",
+  "requestFramePermissions": []
+}
