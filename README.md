@@ -56,6 +56,8 @@
    - **Source**: 選擇 `GitHub Actions`。
 4. 之後每次推送到 `main` 分支時，會自動觸發部署流程。
 
+   > **注意**：如果遇到 `Error: Creating Pages deployment failed` 或 `HttpError: Not Found`，請確認您已經完成了上述第 3 步的設定，將 Source 改為 **GitHub Actions** 而不是 Deploy from a branch。
+
 ## 專案結構
 
 - `src/`: 原始碼
