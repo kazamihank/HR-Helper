@@ -1,20 +1,64 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# HR 小幫手 (HR Helper)
 
-# Run and deploy your AI Studio app
+這是一個 React 應用程式，旨在協助 HR 進行抽獎與分組。
 
-This contains everything you need to run your app locally.
+## 功能
 
-View your app in AI Studio: https://ai.studio/apps/drive/12jf8w3j9DAORaJ7V66uyxt9dK0yolV0y
+- **名單管理**：輸入或管理參與人員名單。
+- **幸運抽獎**：進行隨機抽獎活動。
+- **自動分組**：快速將人員分組。
 
-## Run Locally
+## 開發環境設定
 
-**Prerequisites:**  Node.js
+### 前置要求
 
+- Node.js (建議 v20 或以上)
+- npm
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### 安裝
+
+1. **複製專案**
+
+   \`\`\`bash
+   git clone <repo-url>
+   cd HR-Helper
+   \`\`\`
+
+2. **安裝套件**
+
+   \`\`\`bash
+   npm install
+   \`\`\`
+
+3. **啟動開發伺服器**
+
+   \`\`\`bash
+   npm run dev
+   \`\`\`
+
+   開啟瀏覽器訪問 `http://localhost:3000` (或終端機顯示的網址)。
+
+## 指令說明
+
+- `npm run dev`: 啟動開發模式
+- `npm run build`: 建置生產版本 (至 `dist` 資料夾)
+- `npm run preview`: 預覽建置後的版本
+
+## 部署 (Deployment)
+
+本專案包含 GitHub Actions 設定，可自動部署至 GitHub Pages。
+
+### 設定步驟
+
+1. 將專案推送到 GitHub。
+2. 進入 GitHub Repository 的 **Settings** > **Pages**。
+3. 在 **Build and deployment** 區塊：
+   - **Source**: 選擇 `GitHub Actions`。
+4. 之後每次推送到 `main` 分支時，會自動觸發部署流程。
+
+## 專案結構
+
+- `src/`: 原始碼
+  - `components/`: UI 元件
+  - `App.tsx`: 主應用程式入口
+- `.github/workflows`: CI/CD 設定檔
